@@ -276,6 +276,18 @@
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffd166"><path d="M12 2c-2.5 0-4.75.86-6.59 2.28l.69.69C8.08 4.83 9.97 4 12 4c3.31 0 6 2.69 6 6 0 2.03-.83 3.92-2.28 5.41l.69.69C19.14 16.74 20 14.5 20 12c0-4.42-3.58-8-8-8M6.43 6.43L5.71 5.71C4.08 7.35 3 9.58 3 12c0 4.97 4.03 9 9 9 2.42 0 4.65-1.08 6.29-2.71l-.72-.72C16.27 18.9 14.3 20 12 20c-4.42 0-8-3.58-8-8 0-2.3 1.1-4.27 2.43-5.57M12 6c-1.93 0-3.5 1.57-3.5 3.5S10.07 13 12 13s3.5-1.57 3.5-3.5S13.93 6 12 6m0 2c.83 0 1.5.67 1.5 1.5S12.83 11 12 11s1.5-.67 1.5-1.5S12.83 8 12 8z"/></svg>');
       }
 
+      .science {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e63946"><path d="M19.8 18.4L14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z"/></svg>');
+      }
+
+      .math {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>');
+      }
+
+      .music {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffd166"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>');
+      }
+
       @keyframes float {
         0% {
           transform: translateY(100vh) rotate(0deg) scale(0.8);
@@ -324,11 +336,11 @@
         }
       }
 
-      /* Generate floating objects */
+      /* Generate floating objects - Now with 12 objects */
       .floating-objects span:nth-child(1) {
         width: 60px;
         height: 60px;
-        left: 10%;
+        left: 5%;
         animation-duration: 18s;
         animation-delay: 0s;
       }
@@ -336,7 +348,7 @@
       .floating-objects span:nth-child(2) {
         width: 80px;
         height: 80px;
-        left: 25%;
+        left: 15%;
         animation-duration: 22s;
         animation-delay: 3s;
       }
@@ -344,7 +356,7 @@
       .floating-objects span:nth-child(3) {
         width: 50px;
         height: 50px;
-        left: 40%;
+        left: 25%;
         animation-duration: 20s;
         animation-delay: 6s;
       }
@@ -352,7 +364,7 @@
       .floating-objects span:nth-child(4) {
         width: 70px;
         height: 70px;
-        left: 55%;
+        left: 35%;
         animation-duration: 25s;
         animation-delay: 2s;
       }
@@ -360,7 +372,7 @@
       .floating-objects span:nth-child(5) {
         width: 90px;
         height: 90px;
-        left: 70%;
+        left: 45%;
         animation-duration: 19s;
         animation-delay: 5s;
       }
@@ -368,9 +380,57 @@
       .floating-objects span:nth-child(6) {
         width: 40px;
         height: 40px;
-        left: 85%;
+        left: 55%;
         animation-duration: 23s;
         animation-delay: 1s;
+      }
+
+      .floating-objects span:nth-child(7) {
+        width: 65px;
+        height: 65px;
+        left: 65%;
+        animation-duration: 21s;
+        animation-delay: 4s;
+      }
+
+      .floating-objects span:nth-child(8) {
+        width: 55px;
+        height: 55px;
+        left: 75%;
+        animation-duration: 24s;
+        animation-delay: 7s;
+      }
+
+      .floating-objects span:nth-child(9) {
+        width: 75px;
+        height: 75px;
+        left: 85%;
+        animation-duration: 20s;
+        animation-delay: 2s;
+      }
+
+      .floating-objects span:nth-child(10) {
+        width: 45px;
+        height: 45px;
+        left: 10%;
+        animation-duration: 26s;
+        animation-delay: 5s;
+      }
+
+      .floating-objects span:nth-child(11) {
+        width: 85px;
+        height: 85px;
+        left: 30%;
+        animation-duration: 18s;
+        animation-delay: 3s;
+      }
+
+      .floating-objects span:nth-child(12) {
+        width: 60px;
+        height: 60px;
+        left: 70%;
+        animation-duration: 22s;
+        animation-delay: 6s;
       }
 
       @media (max-width: 768px) {
@@ -390,6 +450,11 @@
         .btn {
           padding: 14px 20px;
         }
+
+        /* Reduce number of floating objects on mobile */
+        .floating-objects span:nth-child(n + 7) {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -402,7 +467,13 @@
       <span class="floating ruler"></span>
       <span class="floating graduate"></span>
       <span class="floating atom"></span>
+      <span class="floating science"></span>
+      <span class="floating math"></span>
+      <span class="floating music"></span>
       <span class="floating book"></span>
+      <span class="floating pencil"></span>
+      <span class="floating graduate"></span>
+      <span class="floating science"></span>
     </div>
 
     <div class="container">
@@ -451,7 +522,7 @@
             </svg>
             Visit Our Website
           </a>
-          <button class="btn btn-outline" onclick="window.close();">
+          <button class="btn btn-outline" id="closeButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -471,5 +542,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Enhanced close functionality
+      document
+        .getElementById("closeButton")
+        .addEventListener("click", function () {
+          // Try to close the window
+          if (window.history.length > 1) {
+            window.history.back();
+          } else {
+            window.close();
+          }
+
+          // Fallback - redirect to about:blank if window doesn't close
+          setTimeout(function () {
+            window.location.href = "about:blank";
+          }, 200);
+        });
+    </script>
   </body>
 </html>
